@@ -1,0 +1,10 @@
+﻿<div class="innerContainer">
+    <h1>List Of Students</h1>
+    <input type="text" maxlength="10" placeholder="Enter Name" ng-model="studentsCtrl.name" /> 
+    <input type="button" value="SEARCH" ng-click="studentsCtrl.searchStudent()" />
+    <ul>
+        <li ng-repeat="employee in studentsCtrl.employees">
+            <a href="students/{{employee.name}}">{{employee.name}}</a> 
+        </li>
+    </ul>
+</div>

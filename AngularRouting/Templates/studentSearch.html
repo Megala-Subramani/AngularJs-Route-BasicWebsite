@@ -1,0 +1,19 @@
+﻿<div class="innerContainer">
+    <h1>Student Search</h1>
+    <table style="border: 1px solid silver !important;width: 20%;background-color: #e2dfdf !important;line-height: 28px;text-indent: 4px;" border="1">
+        <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Gender</td>
+            <td>Salary</td>
+        </tr>
+        <tr ng-repeat="emp in studentSearchCtrl.empDetails">
+            <td>{{emp.id}}</td>
+            <td>{{emp.name}}</td>
+            <td>{{emp.gender}}</td>
+            <td>{{emp.salary}}</td>
+        </tr>
+    </table>
+    <br />
+    <div style="width:100%;text-align:center"><a href="students">Back to Students List</a></div>
+</div>

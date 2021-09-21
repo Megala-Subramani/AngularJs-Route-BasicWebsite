@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+    <base href="/" />
+    <meta charset="utf-8" />
+    <title>Angular Routing</title>
+    <script src="scripts/angular-min.js"></script>
+    <script src="scripts/angular-route-min.js"></script>
+    <link href="styles/home.css" rel="stylesheet" />
+    <script src="scripts/script.js"></script>
+</head>
+<body>
+    <table border="1">
+        <tr class="tableHeader">
+            <td colspan="2">
+                <div class="headerItem">WebSite Header</div>
+            </td>
+        </tr>
+        <tr class="tableBody">
+            <td class="sideBar">
+                <div>
+                    <a href="home">Home</a><br />
+                    <a href="courses">Courses</a><br />
+                    <a href="students">Students</a><br />
+                </div>
+            </td>
+            <td class="mainBody"><ng-view></ng-view></td>
+        </tr>
+        <tr class="tableFooter">
+            <td colspan="2"><div class="footerItem">Website Footer</div></td>
+        </tr>
+    </table>
+</body>
+</html>
